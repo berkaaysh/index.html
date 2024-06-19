@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERKAY</title>
+    <style>
+        body {
+            background-color: #0A192F; /* Koyu mavi arka plan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #66FCF1; /* Açık mavi yazı rengi */
+        }
+        .container {
+            text-align: center;
+        }
+        .name {
+            font-size: 6em; /* Büyük font boyutu */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em; /* Harf arası boşluk */
+            animation: glitch 1s infinite linear alternate-reverse; /* Glitch animasyonu */
+        }
+        
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(-2px, 2px);
+            }
+            50% {
+                transform: translate(2px, -2px);
+            }
+            75% {
+                transform: translate(2px, 2px);
+            }
+            100% {
+                transform: translate(-2px, -2px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="name">BERKAY</div>
+    </div>
+</body>
+</html>
